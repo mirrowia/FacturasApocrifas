@@ -1,8 +1,11 @@
 package main;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
+		//Log log = new Log();
+		
+		//log.recordLogs();
 		
 		Factura file = new Factura();
 		
@@ -24,7 +27,11 @@ public class Main {
 
 			e.printStackTrace();
 		}
-
+		
+		StoredProcedureCall storedProcedure = new StoredProcedureCall();
+		
+		storedProcedure.run();		
+		
 	}
 
 }
